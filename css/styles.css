@@ -1,0 +1,261 @@
+body {
+    font-family: "Nunito";
+    font-size: 16px;
+    text-align: center;
+    /*Espacio entre renglones (Sangria)*/
+    line-height: 1;
+    /* El scroll solo funciona en el eje y (Desaparece el scrool en el eje x)*/
+    overflow-x: hidden;
+    background: white;
+    color: black;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    background: #005954;
+    align-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    font-family: "Lobster";
+    color: #F2EFEE;
+    padding: 0 32px;
+    font-size: 40px;
+
+}
+
+.img_logo {
+    height: 50px;
+}
+
+main {
+    display: flex;
+    padding: 32px;
+    height: 100vh; /* Altura del contenedor */
+    
+}
+
+/* SECTION PRODUCTOS */
+.productos, .add-producto{
+    flex: 1; /* Distribuye el espacio equitativamente */
+}
+.productos {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    color: white;  
+    
+}
+.tittle_container{
+    background: white;
+    font-family: "Luckiest Guy";
+    color: #005954;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.encabezado__buscar {
+    display: flex;
+    justify-content: center;
+}
+.buscar__input {
+    outline: none;
+    width: 260px;
+    height: 32px;
+    font-size: 16px;
+    padding: 3px 8px;
+    border: 2px solid #338b85;
+    color: #338b85;
+    margin: 0 0 5px 0;
+    border-radius: 15px 0 0 15px;
+    
+}
+
+.buscar__boton {
+    background-position: center;
+    border: 1px solid #338b85;
+    background-color: #338b85;
+    border-left: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 0 5px 0;
+    color: white;
+    border-radius: 0 15px 15px 0;
+}
+
+
+.mensaje__titulo {
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.card {
+    background: #338b85;
+    width: 196px;
+    border-radius: 15px;
+    border:  3px solid #005954;
+    margin: 10px;
+}
+.card:hover{
+    border: solid 5px #005954;
+}
+
+.img-card{
+    padding: 10px;
+    
+}
+.img-card img {
+    border: 3px solid #005954;
+    width: 174px;
+    background: #F2EFEE;
+    border-radius: 15px;
+}
+
+.card-info {
+    text-align: start;
+    padding: 0 10px;
+}
+.card-value {
+    padding: 10px 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-value p{
+    font-weight: bold;
+}
+
+.button-delete {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.button-delete img{
+    width: 30px;
+}
+.button-delete:hover {
+    transform: scale(1.2);
+}
+
+
+
+/*Agregar Producto*/
+.add-form {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input__form {
+    margin: 10px 100px;
+    border-radius: 15px;
+    padding: 10px; 
+    /*Quitamos el contorno del input*/
+    outline: none;
+    font-size: 16px;
+    border: solid gray;
+    color: gray;
+    
+}
+
+.mensaje-error {
+    color: #005954;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 105px;
+    text-align: start;
+}
+
+.input__form:focus{
+    border: solid #005954;
+    color: #005954;
+    font-weight: bold;
+}
+
+.button-container {
+    padding: 30px 0 0 0;
+}
+.button-enviar{
+    background: #005954;
+    padding: 10px 50px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid #005954;
+    font-size: 16px;
+    margin: 10px;
+
+}
+.button-limpiar{
+    background: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    color: #005954;
+    border-radius: 10px;
+    border: 3px solid #005954;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.button-enviar:hover,
+.button-limpiar:hover {
+    transform: scale(1.2);
+}
+
+
+/* FOOTER */
+footer {
+    background: #005954;
+    height: 200px;
+    color: #F2EFEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo_footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-family: "Lobster";
+    font-size: 40px;
+    font-weight: bold;
+}
+
+footer p {
+    padding: 10px 0 5px 0;
+}
+
+/* Mobile */
+@media (max-width : 900px) {
+
+    /* SECTION PRODUCTOS */
+    main {
+        flex-direction: column-reverse; 
+        height: 100%; /* Altura del contenedor */
+    }
+    .lista-productos {
+        justify-content: space-around;
+    }
+    .add-form input {
+        margin: 10px;
+    }
+    .mensaje-error {
+        margin: 0 15px;
+    }
+}

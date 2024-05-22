@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Peluche Baby Yoda",
+      "price": "600",
+      "image": "https://chedrauimx.vtexassets.com/arquivos/ids/30670028-800-auto?v=638518224677230000&width=800&height=auto&aspect=true"
+    },
+    {
+      "id": "2",
+      "name": "Lámpara de astronauta",
+      "price": "200",
+      "image": "https://m.media-amazon.com/images/I/61PXIHRssTL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Taza escandalosos",
+      "price": "260",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_799223-MLM44574458773_012021-F.webp"
+    },
+    {
+      "id": "4",
+      "name": "Termo Mosters Inc.",
+      "price": "500",
+      "image": "https://ss425.liverpool.com.mx/xl/1106337957.jpg"
+    },
+    {
+      "id": "d849",
+      "name": "Porta papel higiénico Dino",
+      "price": "300",
+      "image": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/51c2b6ba-d6de-4e92-a99f-ce47ca9f794b.9083834bb04ee6cdb0debc1057e85e2f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+    },
+    {
+      "id": "89c6",
+      "name": "Casco Iron Man",
+      "price": "3000",
+      "image": "https://images-cdn.ubuy.co.in/63d5944dc961dc27b370adf7-iron-man-helmet-electronic-mk-5-helmet.jpg"
+    }
+  ]
+}

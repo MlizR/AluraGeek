@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./img/add-to-cart.png" type="image/x-icon"/>
+    <title>AluraGeek</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <img class="img_logo" src="./img/add-to-cart.png"/>
+        <h3 class="menu__title">AluraGeek</h3>
+      </div>
+   </header>
+
+   <main class="main__container">
+
+    <section class="productos">
+      <h1 class="tittle_container">Mis Productos</h1>
+      <div class="encabezado__buscar">
+        <input type="search" placeholder="Buscar" id="buscar" class="buscar__input" data-busqueda>
+        <button class="buscar__boton" data-boton-busqueda><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+      <div data-products class="lista-productos">
+              
+      </div>
+    </section>
+
+    <section class="add-producto">
+      <h1 class="tittle_container">Agregar Producto</h1>
+      <form class="add-form" data-form>
+        <input data-name class="input__form"  name="name" placeholder="Nombre" type="text" minlength="3" required>
+        <span class="mensaje-error"></span>
+        <input data-price class="input__form" name="price" placeholder="Precio $$" type="number" required>
+        <span class="mensaje-error"></span>
+        <input data-img class="input__form" name="image" placeholder="imagen" type="url" required>
+        <span class="mensaje-error"></span>
+
+        <div class="button-container">
+          <button type="submit" class="button-enviar">Enviar</button>
+          <button type="reset" class="button-limpiar">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+   </main>
+   
+   <footer>
+    <div class="logo_footer">
+      <img class="img_logo" src="./img/add-to-cart.png"/>
+      <h3 class="menu__title">AluraGeek</h3>
+    </div>
+    <p>Desarrollado por Lizette Meléndez Romero</p>
+    <p>&copy Copyright - 2024</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/3e42a49027.js" crossorigin="anonymous"></script>
+  <script src="js/main.js" type="module"></script>
+  </body>
+</html>
